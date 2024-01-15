@@ -8,7 +8,7 @@ int main()
 {
     // largest_element_in_array();
     // sum_of_arr_elements();
-    linear_search();
+    // linear_search();
 
     return 0;
 }
