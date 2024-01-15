@@ -1,17 +1,11 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-void print_vector(vector<int> v)
-{
-    // cout << "vector size is " << v.size() << endl;
-    for (int i = 0; i < v.size(); i++)
-    {
-        cout << v[i] << " ";
-    }
-    cout << endl;
-}
+void print_vector(vector<int> v);
+void vector_operation(vector<int> v);
 int main()
 {
+
     vector<int> v;
     cout<<"enter the value of n (size for vector)"<<endl;
     int n;
@@ -42,6 +36,26 @@ int main()
     v3.pop_back();
     print_vector(v);
     print_vector(v3);
-
+    vector<int> v_size_capacity(50,10);
+    vector_operation(v_size_capacity);
+    v_size_capacity.resize(10);
+    vector_operation(v_size_capacity);
     return 0;
+}
+
+void print_vector(vector<int> v)
+{
+    // cout << "vector size is " << v.size() << endl;
+    for (int i = 0; i < v.size(); i++)
+    {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+}
+
+void vector_operation(vector<int> v)
+{
+    cout << "size of vector " << v.size() << endl;
+
+    cout << "capacity of vector " << v.capacity() << endl;
 }
