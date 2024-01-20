@@ -1,20 +1,20 @@
 #include <iostream>
 using namespace std;
-bool targetSum(int arr[], int size, int target_sum)
+bool absaluteDiff(int arr[], int size, int target_diff)
 {
 
     int i = 0;
-    int j = size - 1;
+    int j = i + 1;
     int count = 0;
-    while (i < j)
+    while (i < size && j < size)
     {
-        if (arr[i] + arr[j] == target_sum)
+        if (abs(arr[i] - arr[j]) == target_diff)
         {
             return true;
         }
-        else if ((arr[i] + arr[j]) > target_sum)
+        else if (abs(arr[i] - arr[j]) < target_diff)
         {
-            j--;
+            j++;
         }
         else
         {
@@ -26,9 +26,9 @@ bool targetSum(int arr[], int size, int target_sum)
 int main()
 {
     int arr[] = {2, 3, 6, 9, 12, 15};
-    int target_sum = 5;
+    int target_diff = 3;
     int n = sizeof(arr) / sizeof(arr[0]);
-    bool output = targetSum(arr, n, target_sum);
+    bool output = absaluteDiff(arr, n, target_diff);
 
     if (output == true)
         cout << "YES" << endl;
