@@ -12,7 +12,7 @@ bool linear_search(int *arr,int n,int x,int i){
 int main(){
     int arr[]={1,3,9,20};
     int n = sizeof(arr)/sizeof(arr[0]);
-    int target = 200;
+    int target = 20;
     int idx = 0;
     bool result = linear_search(arr,n,target,idx);
     if(result==1) cout<<"Found\n";
