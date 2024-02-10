@@ -14,7 +14,7 @@ int main()
 
         string s1 = "Ahmad";
         string s2 = "Shaikh";
-        s1+=s2;//direct append
+        s1+=s2;//direct appendj
         s1=s1+s2;//copy is created
         cout<<s1<<endl;
 
@@ -26,7 +26,7 @@ int main()
         cout<<s;
         cout<<l;
 
-        
+
         int number = 3;
         string num_str=to_string(number).append('3');
         num_str.push_back('0');
