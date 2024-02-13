@@ -1,26 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unais's Portfolio</title>
+    <!-- /* font */ -->
+    <style>
+
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- header -->
     <header>
         <!-- navbar -->
-        <div id="nav-container">
-        <ul id="navbar">
-            <li><a href="">Home</a></li>
-            <li><a href="">Project</a></li>
-            <li><a href="">Skills</a></li>
-           <li> <a href="">contact</a></li>
-        </ul>
-    </div>
+        <div id="navbar-container">
+            <ul id="navbar" data-hidden="true">
+                <div id="navmenu">
+                    <li><a href=""><span>01. </span>About</a></li>
+                    <li><a href=""><span>02. </span>Skill</a></li>
+                    <li><a href=""><span>03. </span>Project</a></li>
+                    <li> <a href=""><span>04. </span>Contact</a></li>
+                    <li><a href=""><button id="resume">Resume</button></a></li>
+
+                    
+
+                </div>
+            </ul>
+            <div class="logo">Unais shaikh</div>
+                    <div class="hamburgerMenu" onclick="crossSymbol()"> 
+                        <div class="bar" id="bar1"></div>
+                        <div class="bar" id="bar2"></div>
+                        <div class="bar" id="bar3"></div>
+                    </div>
+        </div>
 
 
 
     </header>
+
+
+    <!-- Hero Section -->
+    <section id="hero-section">
+        <div id="hero-container">
+            <p class="para">Hi, my name is</p>
+            <div class="hero-headline">
+                <h1>Shaikh Unais Ahmad.</h1>
+                <h1 id="work">I write Code.</h1>
+            </div>
+            <div id="intro-para">
+                <p class="para" style="color : #708ab1">
+                    I'm a computer science <span class="highlight">undergrade</span> specialized in<br /> buliding web
+                    application and a good problem solver.<br />currently looking to apply my knowledge in industry.
+                </p>
+            </div>
+        </div>
+        <div id="btn-ctn">
+            <button id="resume" style="padding: .6rem 2rem;">Check out</button>
+        </div>
+    </section>
 </body>
+<script src="script.js"></script>
 </html>
