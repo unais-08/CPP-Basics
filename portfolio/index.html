@@ -16,25 +16,21 @@
     <!-- header -->
     <header>
         <!-- navbar -->
-        <div id="navbar-container">
-            <ul id="navbar" data-hidden="true">
-                <div id="navmenu">
-                    <li><a href=""><span>01. </span>About</a></li>
+        <div id="navbar">
+            <ul id="navmenu"  class="hidden">
+              
+                    <li><a href="#hero-section"><span>01. </span>About</a></li>
                     <li><a href=""><span>02. </span>Skill</a></li>
                     <li><a href=""><span>03. </span>Project</a></li>
                     <li> <a href=""><span>04. </span>Contact</a></li>
                     <li><a href=""><button id="resume">Resume</button></a></li>
-
-                    
-
-                </div>
             </ul>
             <div class="logo">Unais shaikh</div>
-                    <div class="hamburgerMenu" onclick="crossSymbol()"> 
-                        <div class="bar" id="bar1"></div>
-                        <div class="bar" id="bar2"></div>
-                        <div class="bar" id="bar3"></div>
-                    </div>
+            <div class="hamburgerMenu" onclick="crossSymbol()" onclick="toggleNavbar()"> 
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
+            </div>
         </div>
 
 
@@ -61,6 +57,6 @@
             <button id="resume" style="padding: .6rem 2rem;">Check out</button>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
