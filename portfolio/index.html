@@ -10,6 +10,8 @@
 
     </style>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="project.css">
 </head>
 
 <body>
@@ -17,26 +19,22 @@
     <header>
         <!-- navbar -->
         <div id="navbar">
-            <ul id="navmenu"  class="hidden">
-              
-                    <li><a href="#hero-section"><span>01. </span>About</a></li>
-                    <li><a href=""><span>02. </span>Skill</a></li>
-                    <li><a href=""><span>03. </span>Project</a></li>
-                    <li> <a href=""><span>04. </span>Contact</a></li>
-                    <li><a href=""><button id="resume">Resume</button></a></li>
+            <ul id="navmenu" class="hidden">
+
+                <li><a href="#hero-section"><span>01. </span>About</a></li>
+                <li><a href="#skills"><span>02. </span>Skill</a></li>
+                <li><a href="#projects"><span>03. </span>Project</a></li>
+                <li> <a href=""><span>04. </span>Contact</a></li>
+                <li><a href=""><button id="resume">Resume</button></a></li>
             </ul>
-          
-            <div class="hamburgerMenu" onclick="crossSymbol()" onclick="toggleNavbar()"> 
+
+            <div class="hamburgerMenu" onclick="crossSymbol()" onclick="toggleNavbar()">
                 <div class="bar" id="bar1"></div>
                 <div class="bar" id="bar2"></div>
                 <div class="bar" id="bar3"></div>
             </div>
         </div>
-
-
-
     </header>
-
 
     <!-- Hero Section -->
     <section id="hero-section">
@@ -57,6 +55,109 @@
             <button id="resume" style="padding: .6rem 2rem;">Check out</button>
         </div>
     </section>
+
+    <!-- programming language Section -->
+    <section id="skills">
+        <div class="skill-headline">
+            <h1>Languages</h1>
+        </div>
+        <div id="skill-container">
+            <!-- first container -->
+            <div class="card">
+                <div class="lang-logo-container">
+                    <img src="logos/c++.png" class="lang-logo" alt="c++" width="50" height="50">
+                </div>
+                <div class="lang-exp">C++</div>
+            </div>
+            <!-- first container -->
+            <div class="card">
+                <div class="lang-logo-container">
+                    <img src="logos/c logo.png" class="lang-logo" alt="c++" width="50" height="50">
+                </div>
+                <div class="lang-exp">C</div>
+            </div>
+            <!-- first container -->
+            <div class="card">
+                <div class="lang-logo-container">
+                    <img src="logos/javascript.png" class="lang-logo" alt="c++" width="50" height="50">
+                </div>
+                <div class="lang-exp">js</div>
+            </div>
+            <!-- first container -->
+            <div class="card">
+                <div class="lang-logo-container">
+                    <img src="logos/java.png" class="lang-logo" alt="c++" width="50" height="50">
+                </div>
+                <div class="lang-exp">Java</div>
+            </div>
+            <!-- first container -->
+            <div class="card">
+                <div class="lang-logo-container">
+                    <img src="logos/html.png" class="lang-logo" alt="c++" width="50" height="50">
+                </div>
+                <div class="lang-exp">HTML</div>
+            </div>
+            <!-- first container -->
+            <div class="card">
+                <div class="lang-logo-container">
+                    <img src="logos/css.png" class="lang-logo" alt="c++" width="50" height="50">
+                </div>
+                <div class="lang-exp">css</div>
+            </div>
+            <!-- first container -->
+            <div class="card">
+                <div class="lang-logo-container">
+                    <img src="logos/nodejs.png" class="lang-logo" alt="c++" width="50" height="50">
+                </div>
+                <div class="lang-exp">nodeJs</div>
+            </div>
+            <!-- first container -->
+            <div class="card">
+                <div class="lang-logo-container">
+                    <img src="logos/git.png" class="lang-logo" alt="c++" width="50" height="50">
+                </div>
+                <div class="lang-exp">Git</div>
+            </div>
+            <!-- first container -->
+            <div class="card">
+                <div class="lang-logo-container">
+                    <img src="logos/git.png" class="lang-logo" alt="c++" width="50" height="50">
+                </div>
+                <div class="lang-exp">Git</div>
+            </div>
+        </div>
+    </section>
+
+<section id="projects">
+    <div id="project-container">
+        <div class="skill-headline">
+            <h1 style="font-family: Fira Code,monospace">Projects</h1>
+        </div>
+        
+            <div class="cardsctn">
+                <div class="cards-element"><img src="instagram.png" class="cardsimg" alt="">
+                    <p>Extension converter for <br>office documents</p>
+                    <button id="resume" style="margin-top:2rem;">Link</button>
+                </div>
+                <div class="cards-element"><img src="twitter.png" class="cardsimg" alt="">
+                    <p>Extension converter for <br>office documents</p>
+                    <button id="resume" style="margin-top:2rem;">Link</button>
+                </div>
+    
+                <div class="cards-element"><img src="facebook.png" class="cardsimg" alt="">
+                    <p>Extension converter for <br>office documents</p>                    <button id="resume" style="margin-top:2rem;">Link</button>
+                </div>
+                <div class="cards-element"><img src="linkedin.png" class="cardsimg" alt="">
+                    <p>Extension converter for <br>office documents</p>                    <button id="resume" style="margin-top:2rem;">Link</button>
+                </div>
+            </div>
+       
+        
+        
+    </div>
+</section>
+
     <script src="script.js"></script>
 </body>
+
 </html>

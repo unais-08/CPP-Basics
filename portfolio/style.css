@@ -10,6 +10,7 @@
 /* ##### Navbar CSS ##### */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
+
 header {
     margin-top: .5rem;
 }
@@ -80,12 +81,14 @@ header {
 
 #hero-section {
     /* background-color: red; */
+    margin-top: 4rem;
     margin-left: 10rem;
+    margin-bottom: 6.5rem;
 }
 
 #hero-container {
     margin: 0;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 }
 
 p.para {
@@ -157,6 +160,9 @@ p.para {
 
     header {
         margin: 0;
+    }
+    #hero-section{
+
     }
 
     
@@ -256,6 +262,7 @@ p.para {
     #hero-section {
         display: block;
         margin-left: 2rem;
+        margin-top:4rem;
         text-align: center;
     }
 
@@ -266,7 +273,7 @@ p.para {
 
 
 
-/* media queries */
+/* ##########################   Mobile  ##########################  */
 @media screen and (max-width:480px) {
  
 
@@ -316,12 +323,22 @@ p.para {
     
 
     #hero-section {
-        margin: 1rem 2rem;
-        display: block;
+       
+            margin:0rem 2rem;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
     }
+    #hero-container {padding: 0.5rem;}
 
     .hero-headline {
         font-size: 1.7rem;
+    }
+    .hero-headline>h1{
+        font-weight: 700;
     }
 
     p.para {

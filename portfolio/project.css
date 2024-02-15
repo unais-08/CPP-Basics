@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+.cardsctn{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 1.25rem;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    /* text-shadow: 1px 1px 3px #fff; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: "Fira Code", monospace;
+    color: #708ab1;
+
+}
+.cardsimg{
+    width: 3.75rem;
+    border-radius: 1.875rem;
+    background-color: black;
+}
+.cards-element{
+    border: 1px solid #BFBFBF;
+    text-align: center;
+    font-size: 1.375rem;
+    margin: 1rem;
+    padding: .625rem 0.3125rem;
+    box-shadow: 4px 7px 8px black;
+}
+button {
+    font-size: 1rem;
+    padding:0.43rem 1.875rem;
+    border-radius: 1rem;
+    border: none;
+}
+.btn-inst{
+
+    background-color: #f44336;
+}
+.btn-face{
+
+    background-color: #4CAF50;
+}
+.btn-twit{
+
+    background-color: #008CBA;
+}
+.btn-link{
+
+    background-color: #5d4cf0c9;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+}
+
+        /* for Mobile */
+
+        @media only screen and (max-width:400px) {
+            .cardsctn{
+                flex-direction: column;
+                align-items: normal;
+            }
+        
+            .cards-element{
+                    margin: 1rem;
+
+        }
+    }
